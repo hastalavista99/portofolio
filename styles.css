@@ -202,7 +202,12 @@
   }
 
   .contact-link:hover{
-    margin-top: 10px;
+    font-size: 2.8rem;
+    animation-name: links;
+    animation-duration: 0.5s;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+
   }
 
   hr {
@@ -222,8 +227,46 @@
     font-size: 1.2rem;
   }
 
-  @media (max-width: 2000px) and (min-width: 1000px) {
-    #project-tiles {
-      width: 100px;
-    }
+@keyframes links {
+  from {
+    padding-top: 0;
   }
+
+  to {
+    margin-top: 5px;
+    padding-top: 10px;
+    text-shadow: #1f1f1f;
+
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+}
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/* Small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Large tablets/laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Desktops */
+@media (min-width: 1200px) and (max-width: 1919px) {
+
+}
+
+/* Extra large screens */
+@media (min-width: 1920px) {
+
+}
+
